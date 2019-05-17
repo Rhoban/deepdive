@@ -11,7 +11,7 @@ find_library(LIBUSB_LIBRARY NAMES usb-1.0 PATH_SUFFIXES "lib" "lib32" "lib64")
 
 # JSON is needed to parse the trackr configuration
 find_path(LIBJSON_INCLUDE_DIR NAMES json.h PATH_SUFFIXES "include" "json" "json-c")
-find_library(LIBJSON_LIBRARY NAMES json PATH_SUFFIXES "lib" "lib32" "lib64")
+find_library(LIBJSON_LIBRARY NAMES json-c PATH_SUFFIXES "lib" "lib32" "lib64")
 
 # argtable2 is for argument parsing of the commandline
 find_path(ARGTABLE2_INCLUDE_DIRS argtable2.h PATH_SUFFIXES "include")
